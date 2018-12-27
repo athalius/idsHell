@@ -1,0 +1,14 @@
+C:\Dev\dariel\idsHell\api\bin\Debug\netcoreapp2.2\api.deps.json
+C:\Dev\dariel\idsHell\api\bin\Debug\netcoreapp2.2\api.runtimeconfig.json
+C:\Dev\dariel\idsHell\api\bin\Debug\netcoreapp2.2\api.runtimeconfig.dev.json
+C:\Dev\dariel\idsHell\api\bin\Debug\netcoreapp2.2\api.dll
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.csprojAssemblyReference.cache
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.csproj.CoreCompileInputs.cache
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.RazorAssemblyInfo.cache
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.RazorAssemblyInfo.cs
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.AssemblyInfoInputs.cache
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.AssemblyInfo.cs
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.RazorTargetAssemblyInfo.cache
+C:\Dev\dariel\idsHell\api\bin\Debug\netcoreapp2.2\api.pdb
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.dll
+C:\Dev\dariel\idsHell\api\obj\Debug\netcoreapp2.2\api.pdb
