@@ -1,0 +1,11 @@
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.csproj.CoreCompileInputs.cache
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.AssemblyInfoInputs.cache
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.AssemblyInfo.cs
+C:\Dev\dariel\idsHell\auth\bin\Release\netcoreapp2.2\auth.deps.json
+C:\Dev\dariel\idsHell\auth\bin\Release\netcoreapp2.2\auth.runtimeconfig.json
+C:\Dev\dariel\idsHell\auth\bin\Release\netcoreapp2.2\auth.runtimeconfig.dev.json
+C:\Dev\dariel\idsHell\auth\bin\Release\netcoreapp2.2\auth.dll
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.csprojAssemblyReference.cache
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.RazorAssemblyInfo.cache
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.RazorAssemblyInfo.cs
+C:\Dev\dariel\idsHell\auth\obj\Release\netcoreapp2.2\auth.RazorTargetAssemblyInfo.cache
