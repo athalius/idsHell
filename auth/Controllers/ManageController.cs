@@ -12,6 +12,7 @@ using System.Reflection;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 using auth.Models;
+using auth.Models.ManageViewModels;
 
 namespace auth.Controllers
 {
@@ -178,7 +179,7 @@ namespace auth.Controllers
 
             await _signInManager.SignInAsync(user, isPersistent: false);
             _logger.LogInformation("User changed their password successfully.");
-            StatusMessage = _sharedLocalizer["CHANGE_PASSWORD_STATUS"];
+            StatusMessage = "CHANGE_PASSWORD_STATUS";
 
             return RedirectToAction(nameof(ChangePassword));
         }
@@ -226,7 +227,7 @@ namespace auth.Controllers
             }
 
             await _signInManager.SignInAsync(user, isPersistent: false);
-            StatusMessage = _sharedLocalizer["SET_PASSWORD_STATUS"];
+            StatusMessage = "SET_PASSWORD_STATUS";
 
             return RedirectToAction(nameof(SetPassword));
         }
@@ -287,7 +288,7 @@ namespace auth.Controllers
             // Clear the existing external cookie to ensure a clean login process
             await HttpContext.SignOutAsync(IdentityConstants.ExternalScheme);
 
-            StatusMessage = _sharedLocalizer["STATUS_EXTERNAL_LOGIN_ADDED"];
+            StatusMessage = "STATUS_EXTERNAL_LOGIN_ADDED";
             return RedirectToAction(nameof(ExternalLogins));
         }
 
@@ -407,7 +408,7 @@ namespace auth.Controllers
 
             if (!is2faTokenValid)
             {
-                ModelState.AddModelError("Code", _sharedLocalizer["INVALID_VERFICATION_CODE"]);
+                ModelState.AddModelError("Code", "INVALID_VERFICATION_CODE");
                 await LoadSharedKeyAndQrCodeUriAsync(user, model);
                 return View(model);
             }
@@ -522,7 +523,7 @@ namespace auth.Controllers
             {
                 if (!await _userManager.CheckPasswordAsync(user, deletePersonalDataViewModel.Password))
                 {
-                    ModelState.AddModelError(string.Empty, _sharedLocalizer["INCORRECT_PASSWORD"]);
+                    ModelState.AddModelError(string.Empty, "INCORRECT_PASSWORD");
                     return View(deletePersonalDataViewModel);
                 }
             }
@@ -612,7 +613,7 @@ namespace auth.Controllers
         {
             return string.Format(
                 AuthenticatorUriFormat,
-                _urlEncoder.Encode("StsServerIdentity"),
+                _urlEncoder.Encode("authIdentity"),
                 _urlEncoder.Encode(email),
                 unformattedKey);
         }

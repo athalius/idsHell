@@ -14,22 +14,22 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 1 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity;
+using auth;
 
 #line default
 #line hidden
 #line 2 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity.Models;
+using auth.Models;
 
 #line default
 #line hidden
 #line 3 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity.Models.AccountViewModels;
+using auth.Models.AccountViewModels;
 
 #line default
 #line hidden
 #line 4 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity.Models.ManageViewModels;
+using auth.Models.ManageViewModels;
 
 #line default
 #line hidden
@@ -39,7 +39,7 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0e4c044fd768019c5d698229683ea7cc0c1879a5", @"/Views/Shared/_ValidationScriptsPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbb4a04f4a80204e19bfa929c1176379d28e4671", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ea858037201615ee4c1dca99dcb565cc9ff3b4c", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__ValidationScriptsPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", "~/js/vendor-validation.min.js", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -67,7 +67,7 @@ using Microsoft.AspNetCore.Identity;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             BeginContext(0, 79, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e4c044fd768019c5d698229683ea7cc0c1879a54049", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "0e4c044fd768019c5d698229683ea7cc0c1879a53997", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

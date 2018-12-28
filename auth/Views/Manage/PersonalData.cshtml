@@ -1,7 +1,5 @@
-﻿@using StsServerIdentity.Resources
-@inject LocService SharedLocalizer
-@{
-    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("PERSONAL_DATA");
+﻿@{
+    ViewData["Title"] = "Personal data";
     ViewData["ActivePage"] = ManageNavPages.PersonalData;
 }
 
@@ -9,15 +7,15 @@
 
 <div class="row">
     <div class="col-md-6">
-        <p>@SharedLocalizer.GetLocalizedHtmlString("PERSONAL_DATA_INFO")</p>
+		<p>Your account contains personal data that you have given us. This page allows you to download or delete that data.</p>
         <p>
-            <strong>@SharedLocalizer.GetLocalizedHtmlString("PERSONAL_DATA_DELETEINFO")</strong>
+			<strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
         </p>
         <form asp-action="DownloadPersonalData" method="post" class="form-group">
-            <button class="btn btn-primary" type="submit">@SharedLocalizer.GetLocalizedHtmlString("DOWNLOAD")</button>
+			<button class="btn btn-primary" type="submit">Download</button>
         </form>
         <p>
-            <a asp-action="DeletePersonalData" class="btn btn-primary">@SharedLocalizer.GetLocalizedHtmlString("DELETE")</a>
+			<a asp-action="DeletePersonalData" class="btn btn-primary">Delete</a>
         </p>
     </div>
 </div>

@@ -1,8 +1,6 @@
-﻿@using StsServerIdentity.Resources
-@inject LocService SharedLocalizer
-@model DeletePersonalDataViewModel
+﻿@model DeletePersonalDataViewModel
 @{
-    ViewData["Title"] = @SharedLocalizer.GetLocalizedHtmlString("DELETE_PERSONAL_DATA");
+    ViewData["Title"] = "Delete Personal Data";
     ViewData["ActivePage"] = ManageNavPages.DeletePersonalData;
 }
 
@@ -11,7 +9,7 @@
 <div class="alert alert-warning" role="alert">
     <p>
         <span class="fas fa-exclamation-triangle"></span>
-        <strong>@SharedLocalizer.GetLocalizedHtmlString("DELETE_PERSONAL_DATA_TEXT")</strong>
+		<strong>Deleting this data will permanently remove your account, and this cannot be recovered.</strong>
     </p>
 </div>
 
@@ -21,12 +19,12 @@
         @if (Model.RequirePassword)
         {
             <div class="form-group">
-                <label asp-for="Password">@SharedLocalizer.GetLocalizedHtmlString("PASSWORD")</label>
+                <label asp-for="Password">Password</label>
                 <input asp-for="Password" class="form-control" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
         }
-        <button class="btn btn-danger" type="submit">@SharedLocalizer.GetLocalizedHtmlString("DELETE_PERSONAL_DATA_AND_CLOSE")</button>
+			<button class="btn btn-danger" type="submit">Delete data and close my account</button>
     </form>
 </div>
 

@@ -1,6 +1,4 @@
-﻿@using StsServerIdentity.Resources
-@inject LocService SharedLocalizer
-@model StsServerIdentity.Models.ConsentViewModel
+﻿@model auth.Models.ConsentViewModel
 
 <div class="page-consent">
     <div class="row page-header consent-form">
@@ -11,7 +9,7 @@
             }
             <h1>
                 @Model.ClientName
-                <small>@SharedLocalizer.GetLocalizedHtmlString("CONSENT_IS_REQUESTING_YOUR_PERMISSION")</small>
+				<small>is requesting your permission</small>
             </h1>
         </div>
     </div>
@@ -23,14 +21,14 @@
             <form asp-action="Index" class="consent-form">
                 <input type="hidden" asp-for="ReturnUrl" />
 
-                <div>@SharedLocalizer.GetLocalizedHtmlString("CONSENT_IS_CHECK_UNREQUIRED")</div>
+				<div>Uncheck the permissions you do not wish to grant.</div>
 
                 @if (Model.IdentityScopes.Any())
                 {
                     <div class="panel panel-default consent-buttons">
                         <div class="panel-heading consent-title-spacing-bottom">
                             <span class="fas fa-user"></span>
-                            @SharedLocalizer.GetLocalizedHtmlString("CONSENT_PERSONAL_INFORMATION")
+                            Personal Information
                         </div>
                         <ul class="list-group">
                             @foreach (var scope in Model.IdentityScopes)
@@ -44,10 +42,10 @@
                 @if (Model.ResourceScopes.Any())
                 {
                     <div class="panel panel-default">
-                        <div class="panel-heading consent-title-spacing-bottom consent-title-spacing-top">
-                            <span class="fas fa-tasks"></span>
-                            @SharedLocalizer.GetLocalizedHtmlString("CONSENT_APPLICATION_ACCESS")
-                        </div>
+						<div class="panel-heading consent-title-spacing-bottom consent-title-spacing-top">
+							<span class="fas fa-tasks"></span>
+							Application Access
+						</div>
                         <ul class="list-group">
                             @foreach (var scope in Model.ResourceScopes)
                             {
@@ -63,14 +61,14 @@
                         <div class="consent-title-spacing consent-title-spacing-top">
                             <label>
                                 <input class="consent-scopecheck big_checkbox" asp-for="RememberConsent" />
-                                <strong class="consent-middle">@SharedLocalizer.GetLocalizedHtmlString("CONSENT_REMEMBER_MY_DECISION")</strong>
+								<strong class="consent-middle">Remember My Decision</strong>
                             </label>
                         </div>
                     }
 
                     <div class="consent-buttons">
-                        <button name="button" value="yes" class="btn btn-primary" autofocus>@SharedLocalizer.GetLocalizedHtmlString("CONSENT_YES_ALLOWED")</button>
-                        <button name="button" value="no" class="btn">@SharedLocalizer.GetLocalizedHtmlString("CONSENT_NO_NOT_ALLOWED")</button>
+						<button name="button" value="yes" class="btn btn-primary" autofocus>Yes, Allow</button>
+						<button name="button" value="no" class="btn">No, Do Not Allow</button>
                         @if (Model.ClientUrl != null)
                         {
                             <a class="pull-right btn btn-primary" target="_blank" href="@Model.ClientUrl">

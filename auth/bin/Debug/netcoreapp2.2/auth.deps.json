@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "0d70f2120f1da1f41e67ad876900867efdae8071"
+    "signature": "7da06d99dc344c54010c4ee074ea32c02fe5b5a9"
   },
   "compilationOptions": {
     "defines": [
@@ -24,15 +24,18 @@
     ".NETCoreApp,Version=v2.2": {
       "auth/1.0.0": {
         "dependencies": {
+          "BuildBundlerMinifier": "2.8.391",
           "IdentityServer4": "2.3.2",
           "IdentityServer4.AspNetIdentity": "2.3.0",
           "Microsoft.AspNetCore": "2.2.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Mvc": "2.2.0",
           "Microsoft.AspNetCore.StaticFiles": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0",
           "Microsoft.EntityFrameworkCore.Tools": "2.2.0",
           "Microsoft.Extensions.Logging.Debug": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
+          "Microsoft.VisualStudio.Web.BrowserLink": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.0"
         },
         "runtime": {
@@ -42,6 +45,7 @@
           "auth.dll": {}
         }
       },
+      "BuildBundlerMinifier/2.8.391": {},
       "IdentityModel/3.10.3": {
         "dependencies": {
           "Newtonsoft.Json": "11.0.2",
@@ -312,6 +316,23 @@
       },
       "Microsoft.NETCore.Platforms/2.2.0": {},
       "Microsoft.NETCore.Targets/2.0.0": {},
+      "Microsoft.VisualStudio.Web.BrowserLink/2.2.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
+          "Microsoft.AspNetCore.Http.Extensions": "2.2.0",
+          "Microsoft.Extensions.FileProviders.Physical": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Web.BrowserLink.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.VisualStudio.Web.BrowserLink.dll": {}
+        }
+      },
       "Microsoft.VisualStudio.Web.CodeGeneration/2.2.0": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "2.2.0",
@@ -3609,6 +3630,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "BuildBundlerMinifier/2.8.391": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JvnXAF6e55QKR9t+UcG/kVcWap22fHeKjkUcrJwl2N3vF/NpohuvZlBceqYF9S8aL8xOx6h+PX2plnymc23kiQ==",
+      "path": "buildbundlerminifier/2.8.391",
+      "hashPath": "buildbundlerminifier.2.8.391.nupkg.sha512"
+    },
     "IdentityModel/3.10.3": {
       "type": "package",
       "serviceable": true,
@@ -3692,6 +3720,13 @@
       "sha512": "sha512-odP/tJj1z6GylFpNo7pMtbd/xQgTC3Ex2If63dRTL38bBNMwsBnJ+RceUIyHdRBC0oik/3NehYT+oECwBhIM3Q==",
       "path": "microsoft.netcore.targets/2.0.0",
       "hashPath": "microsoft.netcore.targets.2.0.0.nupkg.sha512"
+    },
+    "Microsoft.VisualStudio.Web.BrowserLink/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5iEvISSbDBmZFDwO9uz5xXt3gZTTTb/nL8GPwuyc2++h7GRSD1sHdmBIaRnZ6QSHeqQt5tcZtAmGByZpdg6+bw==",
+      "path": "microsoft.visualstudio.web.browserlink/2.2.0",
+      "hashPath": "microsoft.visualstudio.web.browserlink.2.2.0.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/2.2.0": {
       "type": "package",

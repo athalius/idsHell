@@ -14,17 +14,17 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #line 1 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity;
+using auth;
 
 #line default
 #line hidden
 #line 2 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity.Models;
+using auth.Models;
 
 #line default
 #line hidden
 #line 3 "C:\Dev\dariel\idsHell\auth\Views\_ViewImports.cshtml"
-using StsServerIdentity.Models.AccountViewModels;
+using auth.Models.AccountViewModels;
 
 #line default
 #line hidden
@@ -34,18 +34,18 @@ using Microsoft.AspNetCore.Identity;
 #line default
 #line hidden
 #line 1 "C:\Dev\dariel\idsHell\auth\Views\Manage\_ViewImports.cshtml"
-using StsServerIdentity.Models.ManageViewModels;
+using auth.Models.ManageViewModels;
 
 #line default
 #line hidden
 #line 2 "C:\Dev\dariel\idsHell\auth\Views\Manage\_ViewImports.cshtml"
-using StsServerIdentity.Views.Manage;
+using auth.Views.Manage;
 
 #line default
 #line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"0723a602e84d5a261d35f2702dcc54883c69cad5", @"/Views/Manage/_StatusMessage.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dbb4a04f4a80204e19bfa929c1176379d28e4671", @"/Views/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ec3bbe089bad6ebf0a22e3265e9a50ad63580976", @"/Views/Manage/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ea858037201615ee4c1dca99dcb565cc9ff3b4c", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f77ff86ec413cacc1cf8da140f678195d45c5de9", @"/Views/Manage/_ViewImports.cshtml")]
     public class Views_Manage__StatusMessage : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<string>
     {
         #pragma warning disable 1998

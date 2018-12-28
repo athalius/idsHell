@@ -16,6 +16,7 @@ using IdentityServer4.Extensions;
 using System.Globalization;
 using System.Reflection;
 using auth.Models;
+using auth.Models.AccountViewModels;
 
 namespace auth.Controllers
 {
@@ -309,7 +310,7 @@ namespace auth.Controllers
         {
             if (remoteError != null)
             {
-                ModelState.AddModelError(string.Empty, _sharedLocalizer["EXTERNAL_PROVIDER_ERROR", remoteError]);
+                ModelState.AddModelError(string.Empty, "EXTERNAL_PROVIDER_ERROR");
                 return View(nameof(Login));
             }
             var info = await _signInManager.GetExternalLoginInfoAsync();
@@ -426,11 +427,11 @@ namespace auth.Controllers
                 // Send an email with this link
                 var code = await _userManager.GeneratePasswordResetTokenAsync(user);
                 var callbackUrl = Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code }, protocol: HttpContext.Request.Scheme);
-                await _emailSender.SendEmail(
-                   model.Email, 
-                   "Reset Password",
-                   $"Please reset your password by clicking here: {callbackUrl}", 
-                   "Hi Sir");
+                //await _emailSender.SendEmail(
+                //   model.Email, 
+                //   "Reset Password",
+                //   $"Please reset your password by clicking here: {callbackUrl}", 
+                //   "Hi Sir");
 
                 return View("ForgotPasswordConfirmation");
             }
@@ -541,7 +542,7 @@ namespace auth.Controllers
             var message = "Your security code is: " + code;
             if (model.SelectedProvider == "Email")
             {
-                await _emailSender.SendEmail(await _userManager.GetEmailAsync(user), "Security Code", message, "Hi Sir");
+                //await _emailSender.SendEmail(await _userManager.GetEmailAsync(user), "Security Code", message, "Hi Sir");
             }
 
             return RedirectToAction(nameof(VerifyCode), new { Provider = model.SelectedProvider, ReturnUrl = model.ReturnUrl, RememberMe = model.RememberMe });
@@ -600,7 +601,7 @@ namespace auth.Controllers
             }
             else
             {
-                ModelState.AddModelError(string.Empty, _sharedLocalizer["INVALID_CODE"]);
+                ModelState.AddModelError(string.Empty, "INVALID_CODE");
                 return View(model);
             }
         }

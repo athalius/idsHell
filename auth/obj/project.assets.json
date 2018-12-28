@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v2.2": {
+      "BuildBundlerMinifier/2.8.391": {
+        "type": "package",
+        "build": {
+          "build/BuildBundlerMinifier.targets": {}
+        }
+      },
       "IdentityModel/3.10.3": {
         "type": "package",
         "dependencies": {
@@ -4800,6 +4806,28 @@
     }
   },
   "libraries": {
+    "BuildBundlerMinifier/2.8.391": {
+      "sha512": "JvnXAF6e55QKR9t+UcG/kVcWap22fHeKjkUcrJwl2N3vF/NpohuvZlBceqYF9S8aL8xOx6h+PX2plnymc23kiQ==",
+      "type": "package",
+      "path": "buildbundlerminifier/2.8.391",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/BuildBundlerMinifier.targets",
+        "buildbundlerminifier.2.8.391.nupkg.sha512",
+        "buildbundlerminifier.nuspec",
+        "tools/net46/BundlerMinifier.dll",
+        "tools/net46/NUglify.dll",
+        "tools/net46/Newtonsoft.Json.dll",
+        "tools/netcoreapp2.0/BundlerMinifier.dll",
+        "tools/netcoreapp2.0/NUglify.dll",
+        "tools/netcoreapp2.0/Newtonsoft.Json.dll",
+        "tools/netstandard1.3/BundlerMinifier.dll",
+        "tools/netstandard1.3/NUglify.dll",
+        "tools/netstandard1.3/Newtonsoft.Json.dll"
+      ]
+    },
     "IdentityModel/3.10.3": {
       "sha512": "p8ksoi66L0mUtImWpZ/orTNLylf61KGrA/SUHvlbdUCox9ujfp38YosdpAZUM3mDRW9pAA2KqNl1AQc+4jC4ww==",
       "type": "package",
@@ -13089,6 +13117,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "BuildBundlerMinifier >= 2.8.391",
       "IdentityServer4 >= 2.3.2",
       "IdentityServer4.AspNetIdentity >= 2.3.0",
       "Microsoft.AspNetCore >= 2.2.0",
@@ -13144,6 +13173,10 @@
     "frameworks": {
       "netcoreapp2.2": {
         "dependencies": {
+          "BuildBundlerMinifier": {
+            "target": "Package",
+            "version": "[2.8.391, )"
+          },
           "IdentityServer4": {
             "target": "Package",
             "version": "[2.3.2, )"
