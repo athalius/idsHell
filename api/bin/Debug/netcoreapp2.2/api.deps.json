@@ -3473,7 +3473,7 @@
     "Microsoft.AspNetCore.App/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B1SbCsYNx0zYafa9Y1fQ3Io1ZaTtoKljgHUCpzABg+WYBo1B+wHR4aYOtyiEuMKz03Wpmb4+W19h6ROM3/3azA==",
+      "sha512": "sha512-adJVTKSBi0GMnIyMJaO19cMcsXOWhcYQ/3ugGxH0X7CxbHhmaV4PreEBselccSUAwG213dtYJaCB4DTiOhxs0w==",
       "path": "microsoft.aspnetcore.app/2.2.0",
       "hashPath": "microsoft.aspnetcore.app.2.2.0.nupkg.sha512"
     },
@@ -4215,7 +4215,7 @@
     "Microsoft.EntityFrameworkCore.Tools/2.2.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-wn1ULjQbFadRosiNJE4B65iR5eYL3FkMezH4Tyv8EmdmN5XfCTzIgkk1mQJ1Zcb61Kb3qyZMeGidanwR7h/gug==",
+      "sha512": "sha512-sAcq7hNLc5vw/XTk3XL/JZueuOChX/h7MwM8TNBUPPc75olovWf4sPKIJXSc5+/6UEJA2W06QlQihH2bFCPxug==",
       "path": "microsoft.entityframeworkcore.tools/2.2.0",
       "hashPath": "microsoft.entityframeworkcore.tools.2.2.0.nupkg.sha512"
     },
