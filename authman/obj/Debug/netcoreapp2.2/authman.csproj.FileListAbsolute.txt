@@ -1,0 +1,14 @@
+C:\Dev\dariel\idsHell\authman\bin\Debug\netcoreapp2.2\authman.deps.json
+C:\Dev\dariel\idsHell\authman\bin\Debug\netcoreapp2.2\authman.runtimeconfig.json
+C:\Dev\dariel\idsHell\authman\bin\Debug\netcoreapp2.2\authman.runtimeconfig.dev.json
+C:\Dev\dariel\idsHell\authman\bin\Debug\netcoreapp2.2\authman.dll
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.csproj.CoreCompileInputs.cache
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.RazorAssemblyInfo.cache
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.RazorAssemblyInfo.cs
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.AssemblyInfoInputs.cache
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.AssemblyInfo.cs
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.RazorTargetAssemblyInfo.cache
+C:\Dev\dariel\idsHell\authman\bin\Debug\netcoreapp2.2\authman.pdb
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.csprojAssemblyReference.cache
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.dll
+C:\Dev\dariel\idsHell\authman\obj\Debug\netcoreapp2.2\authman.pdb
