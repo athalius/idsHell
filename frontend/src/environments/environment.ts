@@ -3,7 +3,24 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  authSettings: {
+    stsServer: 'https://localhost:5000',
+    redirect_url: 'https://localhost:4200',
+    client_id: 'angularclient',
+    response_type: 'id_token token',
+    scope: 'dataEventRecords openid profile dataeventrecords',
+    post_logout_redirect_uri: 'https://localhost:4200',
+    start_checksession: true,
+    silent_renew: false,
+    startup_route: '/home',
+    forbidden_route: '/forbidden',
+    unauthorized_route: '/unauthorized',
+    log_console_warning_active: true,
+    log_console_debug_active: true,
+    max_id_token_iat_offset_allowed_in_seconds: 10,
+    silent_renew_url: 'https://localhost:4200/assets/silent-renew.html'
+  }
 };
 
 /*

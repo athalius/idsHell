@@ -22,14 +22,12 @@ namespace auth.Controllers
         private readonly IClientStore _clientStore;
         private readonly IResourceStore _resourceStore;
         private readonly IIdentityServerInteractionService _interaction;
-        private readonly IStringLocalizer _sharedLocalizer;
 
         public ConsentController(
             ILogger<ConsentController> logger,
             IIdentityServerInteractionService interaction,
             IClientStore clientStore,
-            IResourceStore resourceStore,
-            IStringLocalizerFactory factory)
+            IResourceStore resourceStore)
         {
             _logger = logger;
             _interaction = interaction;
@@ -85,12 +83,12 @@ namespace auth.Controllers
                 }
                 else
                 {
-                    ModelState.AddModelError("", _sharedLocalizer["INVALID_CONSENT_PERMISSION"]);
+                    ModelState.AddModelError("", "INVALID_CONSENT_PERMISSION");
                 }
             }
             else
             {
-                ModelState.AddModelError("", _sharedLocalizer["INVALID_CONSENT_SELECTION"]);
+                ModelState.AddModelError("", "INVALID_CONSENT_SELECTION");
             }
 
             if (response != null)

@@ -13,6 +13,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
+
 namespace auth
 {
     public class Startup
@@ -38,6 +39,7 @@ namespace auth
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
             var identityConfig = Configuration.GetSection("IdentityConfig");
             var useLocalCertStore = Convert.ToBoolean(Configuration["UseLocalCertStore"]);
             var certificateThumbprint = Configuration["CertificateThumbprint"];
@@ -125,7 +127,7 @@ namespace auth
                     if (context.Context.Response.Headers["X-Content-Security-Policy"].Count == 0)
                     {
                         var csp = "script-src 'self';style-src 'self';img-src 'self' data:;font-src 'self';form-action 'self';frame-ancestors 'self';block-all-mixed-content";
-                        // IE
+                        // I
                         context.Context.Response.Headers["X-Content-Security-Policy"] = csp;
                     }
                 }
