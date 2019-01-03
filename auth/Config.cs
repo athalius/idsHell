@@ -29,18 +29,13 @@ namespace auth
                 {
                     ApiSecrets =
                     {
-                        new Secret("test".Sha256())
+                        new Secret("thisisMysecret".Sha256())
                     },
                     Scopes =
                     {
                         new Scope
                         {
                             Name = "dataeventrecords",
-                            DisplayName = "Scope for the dataEventRecords ApiResource"
-                        },
-                        new Scope
-                        {
-                            Name = "angularclient",
                             DisplayName = "Scope for the dataEventRecords ApiResource"
                         }
                     },

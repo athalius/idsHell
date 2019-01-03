@@ -107,9 +107,9 @@ namespace api
                   options.Authority = "https://localhost:5000/";
                   options.ApiName = "dataEventRecords";
                   options.RequireHttpsMetadata = false;
-                  options.ApiSecret = "test";
 
-                  //options.ApiSecret = Configuration["secret"];//todo should be from the machine not from the app.settings
+
+                  options.ApiSecret = Configuration["secret"];
               });
 
             services.AddAuthorization(options =>
